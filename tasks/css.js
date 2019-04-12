@@ -18,7 +18,11 @@ export function css() {
 
   return src(config.src.static)
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(
+      sass({
+        includePaths: config.src.inuitcss
+      }).on('error', sass.logError)
+    )
     .pipe(postcss(postcssProcessors))
     .pipe(cleanCSS())
     .pipe(sourcemaps.write('.'))

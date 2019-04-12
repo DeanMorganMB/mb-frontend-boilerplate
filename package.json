@@ -87,7 +87,7 @@
     "ignore": "^3.3.7",
     "js-beautify": "^1.9.0",
     "js-yaml": "^3.13.0",
-    "marked": "^0.3.19",
+    "marked": "^0.6.2",
     "moment-timezone": "^0.5.16",
     "nunjucks-includeData": "0.0.9",
     "prettier": "1.16.4",
@@ -106,6 +106,7 @@
   "dependencies": {
     "@babel/runtime": "^7.1.2",
     "eligrey-classlist-js-polyfill": "^1.2.20180112",
+    "inuitcss": "^6.0.0",
     "normalize-scss": "^7.0.1"
   }
 }

@@ -39,7 +39,8 @@ module.exports = {
       static: `${base.src}/static/scss/**/!(_)*.scss`,
       staticAll: `${base.src}/static/scss/**/*.scss`,
       components: `${base.src}/components/**/*.scss`,
-      vendor: `${base.src}/static/scss/vendor/**/*.scss`
+      vendor: `${base.src}/static/scss/vendor/**/*.scss`,
+      inuitcss: `./node_modules/inuitcss`
     },
     dist: {
       base: `${base.dist}/static/css`

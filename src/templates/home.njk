@@ -8,23 +8,23 @@
     <p>{{ body }}</p>
 
     <h2>List component with default data</h2>
-    {% component 'list' %}
+    {% component 'list-bare' %}
 
     <h2>List component with alternate data source path</h2>
     <p>Some types of waffles:</p>
-    {% component 'list', 'list-waffles.json' %}
+    {% component 'list-bare', 'list-waffles.json' %}
 
     <h2>List component with data provided by template data</h2>
     <p>Some types of pies:</p>
-    {% component 'list', list %}
+    {% component 'list-bare', list %}
 
     <h2>List component with inline data</h2>
     <p>Some types of cookies:</p>
-    {% component 'list', { items: ['Chocolate chip cookie', 'Animal cracker', 'Brownie'] } %}
+    {% component 'list-bare', { items: ['Chocolate chip cookie', 'Animal cracker', 'Brownie'] } %}
 
     <h2>List component with alternate data source path and inline data override</h2>
     <p>Some types of waffles:</p>
-    {% component 'list', 'list-waffles.json', { items: ["There's nothing here anymore, I've eaten all your waffles!"] } %}
+    {% component 'list-bare', 'list-waffles.json', { items: ["There's nothing here anymore, I've eaten all your waffles!"] } %}
   </main>
 </div>
 {% endblock %}
