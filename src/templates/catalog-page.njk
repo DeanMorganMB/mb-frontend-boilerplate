@@ -1,0 +1,16 @@
+{% extends '../layout/default.njk' %}
+
+{% block body %}
+<div class="wrapper">
+  {% component 'nav' %}
+  <main>
+    <h1>{{ title }}</h1>
+    <p>{{ body }}</p>
+
+    <h2>List component with data provided by template data</h2>
+    <p>Some types of pies:</p>
+    {% component 'list-bare', list %}
+
+  </main>
+</div>
+{% endblock %}
